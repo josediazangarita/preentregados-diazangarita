@@ -14,15 +14,18 @@ body{
 }
 
 header{
-    padding: 40px;
     text-align: center;
+
 }
 
+
 header nav{
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #f6135a;
-    border-radius: 40px;
+    border-radius: 20px;
 }
+
+
 
 header nav ul li{
     font-size: 20px;
@@ -38,37 +41,40 @@ li{
 
 a{
     text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
+    color: #ffffff !important;
+    font-size: 16px;
 }
 
 /* estilos de inicio */
 
 main{
-    text-align:center;
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 main h1{
+    text-align: center;
     margin: 20px;
     color: aliceblue;
     font-size: 40px; 
 }
 
-main p{
-    font-size: 18px;
-    color: aliceblue;
-    width: 250px;
-    height: 200px;
-    margin: 20px;
-    margin-bottom: 0px;
-    text-align: center;
-}
 
 .contenedor-inicio{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
+
+.contenedor-inicio img{
+    padding: 20px;
+}
+
 
 /* estilos de noticias */
 
@@ -77,11 +83,15 @@ main p{
     margin: 20px;
 }
 
+
+
 /* estilos de juegos */
 
 .contenedor-juegos{
     display: inline-block
 }
+
+
 
 /* estilos plataformas */
 
@@ -102,6 +112,8 @@ main nav ul li a{
     color:#77D970;
 }
 
+
+
 /* estilos de contacto */
 
 main h2{
@@ -111,10 +123,31 @@ main h2{
     font-size: 25px;
 } 
 
+
+
 /* estilos del footer */
 
 footer{
     text-align: center;
     color: #0191f2;
     margin-top: 40px;
+}
+
+
+/* propiedades de media query */
+
+@media screen and (min-width:992px){
+ 
+    .contenedor-inicio{
+        flex-direction: row;
+    }   
+    
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
 }
