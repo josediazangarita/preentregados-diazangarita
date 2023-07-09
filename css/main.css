@@ -1,0 +1,120 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* estilos generales */
+
+body{
+    background-color: #001524;
+}
+
+header{
+    padding: 40px;
+    text-align: center;
+}
+
+header nav{
+    margin-top: 40px;
+    background-color: #f6135a;
+    border-radius: 40px;
+}
+
+header nav ul li{
+    font-size: 20px;
+    width: 150px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* estilos de inicio */
+
+main{
+    text-align:center;
+
+}
+
+
+main h1{
+    margin: 20px;
+    color: aliceblue;
+    font-size: 40px; 
+}
+
+main p{
+    font-size: 18px;
+    color: aliceblue;
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.contenedor-inicio{
+    display: inline-block;
+}
+
+/* estilos de noticias */
+
+.contenedor-noticias{
+    display: inline-flex;
+    margin: 20px;
+}
+
+/* estilos de juegos */
+
+.contenedor-juegos{
+    display: inline-block
+}
+
+/* estilos plataformas */
+
+main nav{
+    background-color: #E70009;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+main nav ul li{
+    width: 150px;
+    display: inline-block;
+    padding: 10px;
+    margin: 21px;
+}
+
+main nav ul li a{
+    color:#77D970;
+}
+
+/* estilos de contacto */
+
+main h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #77D970;
+    font-size: 25px;
+} 
+
+/* estilos del footer */
+
+footer{
+    text-align: center;
+    color: #0191f2;
+    margin-top: 40px;
+}
