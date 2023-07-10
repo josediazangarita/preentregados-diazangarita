@@ -26,18 +26,6 @@ header nav{
     margin: auto;
 }
 
-header nav ul li{
-    font-size: 20px;
-    width: 150px;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-}
-
-li{
-    padding: 20px;
-}
-
 a{
     text-decoration: none;
     color: #ffffff !important;
@@ -50,8 +38,6 @@ p{
     margin-bottom: 0;
     
 }
-
-/* estilos de inicio */
 
 main{
     display:flex;
@@ -70,6 +56,14 @@ main h1{
    
 }
 
+main h2{
+    margin: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: clamp(10px,8vw,30px);
+} 
+
+/* estilos de inicio */
 
 .contenedor-inicio{
     display: flex;
@@ -149,22 +143,13 @@ main h1{
 }
 
 
-
 /* estilos de contacto */
-
-main h2{
-    margin: 10px;
-    text-align: center;
-    color: aliceblue;
-    font-size: clamp(10px,8vw,30px);
-} 
 
 iframe {
     width: 90%;
     max-width: 300px;
     max-height: 250px;
 }
-
 
 
 /* estilos del footer */
