@@ -95,6 +95,11 @@ main h1{
     gap: 50px;
 }
 
+.contenedor-noticias img{
+    border-radius: 20px;
+
+}
+
 .texto-noticias{
     text-align: justify;
     max-width: 250px;
@@ -105,7 +110,15 @@ main h1{
 /* estilos de juegos */
 
 .contenedor-juegos{
-    display: inline-block
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 20px;
+
+}
+
+.contenedor-juegos img{
+    border-radius: 20px;
 }
 
 
@@ -154,12 +167,21 @@ main h2{
 
 /* propiedades de media query */
 
+@media screen and (min-width:768px){
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 20px;
+    
+    }
+
+}
+/* se crea este media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
+
 @media screen and (min-width:992px){
  
-    .contenedor-inicio{
-        flex-direction: row;
-    }   
-    
     .navbar-expand-lg .navbar-collapse {
         justify-content: center;
     }
@@ -167,5 +189,15 @@ main h2{
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 40px;
         padding-left: 40px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 20px;
     }
 }
