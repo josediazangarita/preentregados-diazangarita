@@ -145,11 +145,17 @@ main h1{
 /* estilos de contacto */
 
 main h2{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: #77D970;
-    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: clamp(10px,8vw,30px);
 } 
+
+iframe {
+    width: 90%;
+    max-width: 300px;
+    max-height: 250px;
+}
 
 
 
@@ -183,6 +189,13 @@ main h2{
         width: 110px;
         gap: 10px;
 }
+
+    iframe {
+        width: 90%;
+        max-width: 600px;
+        max-height: 450px;
+}
+
 }
 
     
@@ -217,5 +230,11 @@ main h2{
         align-items: center;
         width: 110px;
         gap: 10px;
+}
+
+    main iframe{
+        width: 90%;
+        max-width: 800px;
+        max-height: 450px;
 }
 }
