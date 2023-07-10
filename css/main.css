@@ -44,6 +44,13 @@ a{
     font-size: 16px;
 }
 
+p{
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+}
+
 /* estilos de inicio */
 
 main{
@@ -73,7 +80,7 @@ main h1{
 }
 
 .contenedor-inicio img{
-    border-radius: 10px;
+    border-radius: 20px;
 
 }
 
@@ -81,8 +88,16 @@ main h1{
 /* estilos de noticias */
 
 .contenedor-noticias{
-    display: inline-flex;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.texto-noticias{
+    text-align: justify;
+    max-width: 250px;
 }
 
 
@@ -129,10 +144,11 @@ main h2{
 
 /* estilos del footer */
 
-footer{
+.texto-footer{
     text-align: center;
-    color: #0191f2;
     padding: 40px 20px;
+    color: #0191f2;
+
 }
 
 
