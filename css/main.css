@@ -64,9 +64,9 @@ main{
 
 main h1{
     text-align: center;
-    margin: 30px 20px;
+    margin: 20px 20px;
     color: aliceblue;
-    font-size: clamp(20px,8vw,60px);
+    font-size: clamp(40px,8vw,60px);
    
 }
 
@@ -125,21 +125,19 @@ main h1{
 
 /* estilos plataformas */
 
-main nav{
-    background-color: #E70009;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.botones-plataformas{
+    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: repeat(3, 40px);
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    gap: 10px;
 }
 
-main nav ul li{
-    width: 150px;
-    display: inline-block;
-    padding: 10px;
-    margin: 21px;
-}
-
-main nav ul li a{
-    color:#77D970;
+.carousel-plataformas{
+    width: 250px;
+    margin-top: 20px;
 }
 
 
@@ -159,7 +157,7 @@ main h2{
 
 .texto-footer{
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     color: #0191f2;
 
 }
@@ -174,11 +172,21 @@ main h2{
         grid-template-columns: 250px 250px;
         grid-template-rows: repeat(3, 200px);
         grid-gap: 20px;
-    
     }
 
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(2, 40px);
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
 }
-/* se crea este media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
+}
+
+    
+/* se crea el siguiente media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
 
 @media screen and (min-width:992px){
  
@@ -200,4 +208,14 @@ main h2{
         grid-template-rows: repeat(2, 200px);
         grid-gap: 20px;
     }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(6, 110px);
+        grid-template-rows: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
 }
