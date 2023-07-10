@@ -136,8 +136,16 @@ main h1{
 }
 
 .carousel-plataformas{
-    width: 250px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(4, 200px);
+    margin: 20px;
+    grid-gap: 20px;
+
+}
+
+.carousel-inner{
+    border-radius: 20px;
 }
 
 
@@ -190,6 +198,14 @@ iframe {
         gap: 10px;
 }
 
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 200px);
+        margin: 20px;
+        grid-gap: 20px;
+}    
+
     iframe {
         width: 90%;
         max-width: 600px;
@@ -232,9 +248,17 @@ iframe {
         gap: 10px;
 }
 
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 200px;
+        margin: 20px;
+        grid-gap: 20px;
+    }    
+
     main iframe{
-        width: 90%;
-        max-width: 800px;
-        max-height: 450px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 450px;
 }
 }
